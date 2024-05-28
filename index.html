@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A K Biplob</title>
+    <link
+      rel="shortcut icon"
+      href="https://qph.cf2.quoracdn.net/main-qimg-b3b032a4216bcd68feb646127c8c875a"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="user hide_details" id="userBox">
+      <img src="ak2.png" onclick="openinfo()" />
+      <div class="info">
+        <h1>A K Biplob</h1>
+        <p>Working as a web developer at <span>Microsoft inc</span></p>
+        <p>From: Riadh, KSA</p>
+        <a href="#">Connect With Me</a>
+      </div>
+      <div class="close_icon" onclick="closeinfo()"></div>
+    </div>
+
+    <script>
+      let userBox = document.getElementById("userBox");
+
+      function openinfo() {
+        userBox.classList.remove("hide_details");
+      }
+      function closeinfo() {
+        userBox.classList.add("hide_details");
+      }
+    </script>
+  </body>
+</html>
